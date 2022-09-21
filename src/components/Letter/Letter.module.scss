@@ -1,0 +1,49 @@
+@import "../../scss/variables";
+
+.letter {
+  flex: 33%;
+  height: 100%;
+  border: 2px solid $border;
+  margin: 5px;
+  display: grid;
+  place-items: center;
+  font-size: 30px;
+  font-weight: bolder;
+  color: $main-dark;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: transform 250ms linear;
+}
+.darkTheme {
+  border: 2px solid $color-absent-dark;
+}
+
+.flip {
+  animation: flip 0.5s ease;
+}
+
+@keyframes flip {
+  0% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes pop {
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.filled {
+  border: 2px solid $border-filled;
+  animation: pop 0.1s linear 1;
+}
+.filled.darkTheme {
+  border: 2px solid #565758;
+  color: #fff;
+}

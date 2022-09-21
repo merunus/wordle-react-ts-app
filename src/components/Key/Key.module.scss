@@ -1,0 +1,25 @@
+@import "../../scss/variables";
+
+.key {
+  width: 35px;
+  height: 58px;
+  margin: 0 6px 0 0;
+  font-weight: 600;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  background-color: $key-bg;
+  color: $main-dark;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  svg {
+    font-size: 1.6em;
+  }
+}
+
+.darkTheme {
+  background-color: $key-bg-dark;
+  color: #fff;
+}

@@ -1,0 +1,53 @@
+@import "../../scss/variables";
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik:wght@400;500;600;700&display=swap");
+.container {
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+  height: $header-height;
+  position: relative;
+  border-bottom: 1px solid #d3d6da;
+  background-color: #ffffff;
+}
+.darkTheme {
+  background-color: $modal-bg-dark;
+  color: #ffff;
+  border-bottom: 1px solid #3a3a3c;
+}
+
+.titleContainer {
+  text-align: center;
+  display: flex;
+  margin: 0 auto;
+  h1 {
+    font-family: "Rubik", sans-serif;
+    font-size: 2em;
+  }
+  @media (max-width: 430px) {
+    margin: 0 0 0 20px;
+  }
+}
+
+.iconsContainer {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  align-content: center;
+}
+
+.icon {
+  cursor: pointer;
+  margin-left: 5px;
+  height: 32px;
+  width: 32px;
+  svg {
+    height: 32px;
+    width: 32px;
+  }
+}
+#dark {
+  .container {
+    background-color: $modal-bg-dark;
+  }
+}
