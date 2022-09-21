@@ -1,5 +1,5 @@
 # About Project : 
-Project created with React JS using template Create React App --Typescript and Redux Toolkit
+Project created with React JS using template Create React App --Typescript
 
 # Project Launch :
 To start app write next commands in the console : npm install -> npm start
